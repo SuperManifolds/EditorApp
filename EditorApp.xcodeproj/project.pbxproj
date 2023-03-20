@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA69AB6929C7FB4300CB03DD /* EditorAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AB6829C7FB4300CB03DD /* EditorAppApp.swift */; };
+		FA23609C29C7FCBC00C8CD73 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23609B29C7FCBC00C8CD73 /* WebView.swift */; };
+		FA23609E29C7FDB300C8CD73 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FA23609D29C7FDB300C8CD73 /* index.html */; };
+		FA69AB6929C7FB4300CB03DD /* EditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AB6829C7FB4300CB03DD /* EditorApp.swift */; };
 		FA69AB6B29C7FB4300CB03DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AB6A29C7FB4300CB03DD /* ContentView.swift */; };
 		FA69AB6D29C7FB4400CB03DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA69AB6C29C7FB4400CB03DD /* Assets.xcassets */; };
 		FA69AB7029C7FB4400CB03DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA69AB6F29C7FB4400CB03DD /* Preview Assets.xcassets */; };
@@ -16,8 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA23609B29C7FCBC00C8CD73 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FA23609D29C7FDB300C8CD73 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FA69AB6529C7FB4300CB03DD /* EditorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA69AB6829C7FB4300CB03DD /* EditorAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorAppApp.swift; sourceTree = "<group>"; };
+		FA69AB6829C7FB4300CB03DD /* EditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorApp.swift; sourceTree = "<group>"; };
 		FA69AB6A29C7FB4300CB03DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA69AB6C29C7FB4400CB03DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA69AB6F29C7FB4400CB03DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -37,6 +41,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA23609F29C7FEFA00C8CD73 /* JS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JS;
+			sourceTree = "<group>";
+		};
 		FA69AB5C29C7FB4300CB03DD = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +67,16 @@
 		FA69AB6729C7FB4300CB03DD /* EditorApp */ = {
 			isa = PBXGroup;
 			children = (
-				FA69AB6829C7FB4300CB03DD /* EditorAppApp.swift */,
+				FA23609F29C7FEFA00C8CD73 /* JS */,
+				FA69AB6829C7FB4300CB03DD /* EditorApp.swift */,
 				FA69AB6A29C7FB4300CB03DD /* ContentView.swift */,
 				FA69AB6C29C7FB4400CB03DD /* Assets.xcassets */,
 				FA69AB7129C7FB4400CB03DD /* Persistence.swift */,
 				FA69AB7629C7FB4400CB03DD /* Info.plist */,
 				FA69AB7329C7FB4400CB03DD /* EditorApp.xcdatamodeld */,
 				FA69AB6E29C7FB4400CB03DD /* Preview Content */,
+				FA23609B29C7FCBC00C8CD73 /* WebView.swift */,
+				FA23609D29C7FDB300C8CD73 /* index.html */,
 			);
 			path = EditorApp;
 			sourceTree = "<group>";
@@ -133,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA23609E29C7FDB300C8CD73 /* index.html in Resources */,
 				FA69AB7029C7FB4400CB03DD /* Preview Assets.xcassets in Resources */,
 				FA69AB6D29C7FB4400CB03DD /* Assets.xcassets in Resources */,
 			);
@@ -146,9 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA69AB7229C7FB4400CB03DD /* Persistence.swift in Sources */,
+				FA23609C29C7FCBC00C8CD73 /* WebView.swift in Sources */,
 				FA69AB6B29C7FB4300CB03DD /* ContentView.swift in Sources */,
 				FA69AB7529C7FB4400CB03DD /* EditorApp.xcdatamodeld in Sources */,
-				FA69AB6929C7FB4300CB03DD /* EditorAppApp.swift in Sources */,
+				FA69AB6929C7FB4300CB03DD /* EditorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

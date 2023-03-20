@@ -1,0 +1,8 @@
+{
+  "name": "JS",
+  "version": "1.0.0",
+  "dependencies": {
+    "@loopholelabs/scale": "^0.3.15",
+    "@loopholelabs/scalefile": "^0.1.9"
+  }
+}
